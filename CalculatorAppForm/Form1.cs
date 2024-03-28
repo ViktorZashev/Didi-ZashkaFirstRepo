@@ -15,6 +15,7 @@ namespace CalculatorAppForm
 		public Form1()
 		{//jijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdop2ejkdopjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 			InitializeComponent();
+			//deefefe
 		}
 	}
 }
