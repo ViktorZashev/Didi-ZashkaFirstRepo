@@ -63,5 +63,19 @@ namespace CalculatorAppForm
 		{
 
 		}
+
+		private void CalcKg_Click(object sender, EventArgs e)
+		{
+			var pounds = double.Parse(LbBox.Text);
+			var kg = Math.Round(pounds * 0.453, 2);
+			KgBox.Text = kg.ToString();
+		}
+
+		private void CalcLb_Click(object sender, EventArgs e)
+		{
+			var kg = double.Parse(KgBox.Text);
+			var lbs = Math.Round(kg * 2.20, 2);
+			LbBox.Text = lbs.ToString();
+		}
 	}
 }

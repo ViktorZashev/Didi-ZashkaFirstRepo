@@ -41,8 +41,8 @@
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.KgBox = new System.Windows.Forms.TextBox();
+			this.LbBox = new System.Windows.Forms.TextBox();
 			this.CalcKg = new System.Windows.Forms.Button();
 			this.CalcLb = new System.Windows.Forms.Button();
 			this.KgLabel = new System.Windows.Forms.Label();
@@ -145,8 +145,8 @@
 			this.WeightCalculatorPage.Controls.Add(this.KgLabel);
 			this.WeightCalculatorPage.Controls.Add(this.CalcLb);
 			this.WeightCalculatorPage.Controls.Add(this.CalcKg);
-			this.WeightCalculatorPage.Controls.Add(this.textBox2);
-			this.WeightCalculatorPage.Controls.Add(this.textBox1);
+			this.WeightCalculatorPage.Controls.Add(this.LbBox);
+			this.WeightCalculatorPage.Controls.Add(this.KgBox);
 			this.WeightCalculatorPage.Controls.Add(this.label4);
 			this.WeightCalculatorPage.Location = new System.Drawing.Point(4, 25);
 			this.WeightCalculatorPage.Name = "WeightCalculatorPage";
@@ -197,20 +197,20 @@
 			this.label4.Text = "WEIGHT CALCULATOR";
 			this.label4.Click += new System.EventHandler(this.label4_Click);
 			// 
-			// textBox1
+			// KgBox
 			// 
-			this.textBox1.Location = new System.Drawing.Point(392, 157);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 22);
-			this.textBox1.TabIndex = 1;
-			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			this.KgBox.Location = new System.Drawing.Point(392, 157);
+			this.KgBox.Name = "KgBox";
+			this.KgBox.Size = new System.Drawing.Size(100, 22);
+			this.KgBox.TabIndex = 1;
+			this.KgBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
-			// textBox2
+			// LbBox
 			// 
-			this.textBox2.Location = new System.Drawing.Point(392, 254);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 22);
-			this.textBox2.TabIndex = 2;
+			this.LbBox.Location = new System.Drawing.Point(392, 254);
+			this.LbBox.Name = "LbBox";
+			this.LbBox.Size = new System.Drawing.Size(100, 22);
+			this.LbBox.TabIndex = 2;
 			// 
 			// CalcKg
 			// 
@@ -220,6 +220,7 @@
 			this.CalcKg.TabIndex = 3;
 			this.CalcKg.Text = "Calculate Kg";
 			this.CalcKg.UseVisualStyleBackColor = true;
+			this.CalcKg.Click += new System.EventHandler(this.CalcKg_Click);
 			// 
 			// CalcLb
 			// 
@@ -229,6 +230,7 @@
 			this.CalcLb.TabIndex = 4;
 			this.CalcLb.Text = "Calculate Lb";
 			this.CalcLb.UseVisualStyleBackColor = true;
+			this.CalcLb.Click += new System.EventHandler(this.CalcLb_Click);
 			// 
 			// KgLabel
 			// 
@@ -288,8 +290,8 @@
 		private System.Windows.Forms.Label KgLabel;
 		private System.Windows.Forms.Button CalcLb;
 		private System.Windows.Forms.Button CalcKg;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox LbBox;
+		private System.Windows.Forms.TextBox KgBox;
 	}
 }
 
