@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CalculatorAppForm"
+    "\\CalculatorAppForm",
+    "\\CalculatorAppForm\\Properties"
   ],
+  "SelectedNode": "\\CalculatorAppForm\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
