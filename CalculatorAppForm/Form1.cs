@@ -10,12 +10,34 @@ using System.Windows.Forms;
 
 namespace CalculatorAppForm
 {
-	public partial class Form1 : Form
+	public partial class Calculators : Form
 	{
-		public Form1()
-		{//jijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdop2ejkdopjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+		public Calculators()
+		{
 			InitializeComponent();
-			//deefefe
+		}
+		private void tabPage1_Click(object sender, EventArgs e)
+		{
+
+		}
+		private void textBox2_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+		private void CalcCelsius_Click(object sender, EventArgs e)
+		{
+			
+			var Fahrenheit = double.Parse(FahrenheitBox.Text);
+			double Celsius = Math.Round((double) 5 / 9 * (Fahrenheit - 32),2);
+			CelsiusBox.Text = Celsius.ToString();
+		}
+
+		private void CalcFahrenheit_Click(object sender, EventArgs e)
+		{
+			var Celsius = double.Parse(CelsiusBox.Text);
+			double Fahrenheit = Math.Round(((double)5 / 9 * Celsius) + 32, 2);
+			FahrenheitBox.Text = Fahrenheit.ToString();
+			FahrenheitBox.ForeColor = Color.Blue;
 		}
 	}
 }
