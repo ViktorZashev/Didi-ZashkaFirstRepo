@@ -39,6 +39,7 @@
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.label3 = new System.Windows.Forms.Label();
 			this.tabControl1.SuspendLayout();
 			this.TabPage.SuspendLayout();
 			this.SuspendLayout();
@@ -58,6 +59,7 @@
 			// TabPage
 			// 
 			this.TabPage.BackColor = System.Drawing.Color.Cyan;
+			this.TabPage.Controls.Add(this.label3);
 			this.TabPage.Controls.Add(this.CalcFahrenheit);
 			this.TabPage.Controls.Add(this.FahrenheitBox);
 			this.TabPage.Controls.Add(this.CelsiusBox);
@@ -74,9 +76,9 @@
 			// 
 			// CalcFahrenheit
 			// 
-			this.CalcFahrenheit.Location = new System.Drawing.Point(374, 245);
+			this.CalcFahrenheit.Location = new System.Drawing.Point(353, 228);
 			this.CalcFahrenheit.Name = "CalcFahrenheit";
-			this.CalcFahrenheit.Size = new System.Drawing.Size(158, 23);
+			this.CalcFahrenheit.Size = new System.Drawing.Size(205, 26);
 			this.CalcFahrenheit.TabIndex = 5;
 			this.CalcFahrenheit.Text = "Calculate Fahrenheit";
 			this.CalcFahrenheit.UseVisualStyleBackColor = true;
@@ -100,28 +102,31 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(371, 140);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(70, 16);
+			this.label2.Size = new System.Drawing.Size(113, 26);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Fahrenheit";
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(236, 140);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(51, 16);
+			this.label1.Size = new System.Drawing.Size(77, 26);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Celsius";
+			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// CalcCelsius
 			// 
-			this.CalcCelsius.Location = new System.Drawing.Point(220, 245);
+			this.CalcCelsius.Location = new System.Drawing.Point(144, 228);
 			this.CalcCelsius.Name = "CalcCelsius";
-			this.CalcCelsius.Size = new System.Drawing.Size(109, 26);
+			this.CalcCelsius.Size = new System.Drawing.Size(190, 26);
 			this.CalcCelsius.TabIndex = 0;
-			this.CalcCelsius.Text = "Calculate C";
+			this.CalcCelsius.Text = "Calculate Celsius";
 			this.CalcCelsius.UseVisualStyleBackColor = true;
 			this.CalcCelsius.Click += new System.EventHandler(this.CalcCelsius_Click);
 			// 
@@ -155,6 +160,17 @@
 			this.tabPage4.Text = "tabPage4";
 			this.tabPage4.UseVisualStyleBackColor = true;
 			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(176, 55);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(382, 29);
+			this.label3.TabIndex = 6;
+			this.label3.Text = "TEMPERATURE CALCULATOR";
+			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
 			// Calculators
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,6 +199,7 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button CalcCelsius;
 		private System.Windows.Forms.Button CalcFahrenheit;
+		private System.Windows.Forms.Label label3;
 	}
 }
 

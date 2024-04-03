@@ -37,7 +37,11 @@ namespace CalculatorAppForm
 			var Celsius = double.Parse(CelsiusBox.Text);
 			double Fahrenheit = Math.Round(((double)5 / 9 * Celsius) + 32, 2);
 			FahrenheitBox.Text = Fahrenheit.ToString();
-			FahrenheitBox.ForeColor = Color.Blue;
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
