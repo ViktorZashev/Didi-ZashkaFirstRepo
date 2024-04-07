@@ -77,5 +77,66 @@ namespace CalculatorAppForm
 			var lbs = Math.Round(kg * 2.20, 2);
 			LbBox.Text = lbs.ToString();
 		}
-	}
+
+        private void CelsiusBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculators_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var leva = double.Parse(LevaBox.Text);
+            var euro = Math.Round(leva * 0.51, 2);
+            EuroBox.Text = euro.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var euro = double.Parse(EuroBox.Text);
+            var leva = Math.Round(euro * 1.51, 2);
+            LevaBox.Text = leva.ToString();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LevaBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+			var density = double.Parse(Density.Text);
+			var volume = double.Parse(Volume.Text);
+			Output.Text = (density/volume).ToString();
+        }
+
+        private void Output_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
